@@ -16,6 +16,8 @@ What you need to know:
 
 5. If your primary language is not British English, override `html-lang`.
 
+6. If you need to add attributes to the `<html>` element, put them in `html-attributes`.
+
 When everything runs smoothly, the CSS flow is as follows:
 
 1. `html`: initial state

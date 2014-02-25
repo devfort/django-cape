@@ -21,8 +21,8 @@
     
     {% block javascript-variables %}{% endblock %}
     {% block javascript-libraries %}{% endblock %}
+    {% block javascript-enhance %}{% endblock %}
     <script>
-      {% block javascript-enhance %}{% endblock %}
       clearTimeout(CAPE.timeout);
       CAPE.stage('ready');
     </script>

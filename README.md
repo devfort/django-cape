@@ -20,7 +20,9 @@ What you need to know:
 
 7. Add your normal page content in `body-sheath`.
 
-8. If you **really** need to put some JavaScript in the `<head>` (eg for measuring page timing) put it in `javascript-head`.
+8. If you use analytics, put them in `javascript-analytics`.
+
+9. If you **really** need to put some JavaScript in the `<head>` (eg for measuring page timing) put it in `javascript-head`.
 
 When everything runs smoothly, the CSS flow is as follows:
 

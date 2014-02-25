@@ -13,6 +13,7 @@
       CAPE.timeout = setTimeout( CAPE.stage('timeout'), 5000 );
       CAPE.stage('capable');
     </script>
+    {% block javascript-head %}{% endblock %}
   </head>
   <body {% block body-attributes %}{% endblock %} class='{% block body-class %}{% endblock %}'>
     

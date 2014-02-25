@@ -1,20 +1,10 @@
 <!DOCTYPE html>
 <html lang='{% block html-lang %}en-gb{% endblock %}' {% block html-attributes %}{% endblock %}>
   <head {% block head-attributes %}{% endblock %}>
-    <title>{% block pagetitle %}SET A TITLE{% endblock %}</title>
-    <!--[if lt IE 9]>
-    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-    {% block head-icons %}{% endblock %}
-    {% block head-links %}{% endblock %}
-    {% block head-alternate %}{% endblock %}
-    {% block head-css %}{% endblock %}
-    {% block head-meta %}{% endblock %}
-    
     {% block head-charset %}
       <meta charset='UTF-8'>
     {% endblock %}
+    {% block head-block %}{% endblock %}
     <script>
       window.CAPE = {};
       window.CAPE.stage = function(stage) {

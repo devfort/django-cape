@@ -1,0 +1,21 @@
+{% extends 'cape_shell.html' %}
+
+{% block head-block %}
+  <title>{% block head-title %}{% block head-title-sitename %}SET WEBSITE NAME{% endblock %} — {% block head-title-page %}SET TITLE{% endblock %}{% endblock %}</title>
+  {% block head-html5shim %}
+    <!--[if lt IE 9]>
+    <script src='https://html5shim.googlecode.com/svn/trunk/html5.js'></script>
+    <![endif]-->
+  {% endblock %}
+  {% block head-viewport %}
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+  {% endblock %}
+  {% block head-meta %}{% endblock %}
+  {% block head-icons %}{% endblock %}
+  {% block head-links %}{% endblock %}
+  {% block head-alternate %}{% endblock %}
+  {% block head-css %}
+    {% block head-css-stylesheet %}{% endblock %}
+    {% block head-css-localstyles %}{% endblock %}
+  {% endblock %}
+{% endblock %}

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang='{% block html-lang %}en-gb{% endblock %}' {% block html-attributes %}{% endblock %}>
   <head {% block head-attributes %}{% endblock %}>
-    <meta charset='UTF-8'>
     <title>{% block pagetitle %}SET A TITLE{% endblock %}</title>
     <!--[if lt IE 9]>
     <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,6 +12,9 @@
     {% block head-css %}{% endblock %}
     {% block head-meta %}{% endblock %}
     
+    {% block head-charset %}
+      <meta charset='UTF-8'>
+    {% endblock %}
     <script>
       window.CAPE = {};
       window.CAPE.stage = function(stage) {

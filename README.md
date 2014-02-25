@@ -14,6 +14,8 @@ What you need to know:
 
 4. Asynchronous code, analytics and further behavioural changes (eg form submission) will generally go in `javascript-asynchronous`.
 
+5. If your primary language is not British English, override `html-lang`.
+
 When everything runs smoothly, the CSS flow is as follows:
 
 1. `html`: initial state

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en-gb'>
+<html lang='{% block html-lang %}en-gb{% endblock %}'>
   <head {% block head-attributes %}{% endblock %}>
     <meta charset='UTF-8'>
     <title>{% block pagetitle %}SET A TITLE{% endblock %}</title>
@@ -38,4 +38,3 @@
     {% block javascript-asynchronous %}{% endblock %}
   </body>
 </html>
-

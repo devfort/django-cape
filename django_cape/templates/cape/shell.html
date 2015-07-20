@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang='{% block html-lang %}en-gb{% endblock %}' {% block html-attributes %}{% endblock %}>
-  <head {% block head-attributes %}{% endblock %}>
-    {% block head-charset %}
+<html lang='{% block html_lang %}en-gb{% endblock %}' {% block html_attributes %}{% endblock %}>
+  <head {% block head_attributes %}{% endblock %}>
+    {% block head_charset %}
       <meta charset='UTF-8'>
     {% endblock %}
-    {% block head-block %}{% endblock %}
+    {% block head_block %}{% endblock %}
     <script>
       window.CAPE = {};
       window.CAPE.stage = function(stage) {
@@ -13,20 +13,20 @@
       CAPE.timeout = setTimeout( CAPE.stage('timeout'), 5000 );
       CAPE.stage('capable');
     </script>
-    {% block javascript-head %}{% endblock %}
+    {% block javascript_head %}{% endblock %}
   </head>
-  <body {% block body-attributes %}{% endblock %} class='{% block body-class %}{% endblock %}'>
+  <body {% block body_attributes %}{% endblock %} class='{% block body_class %}{% endblock %}'>
     
-    {% block body-sheath %}{% endblock %}
+    {% block body_sheath %}{% endblock %}
     
-    {% block javascript-variables %}{% endblock %}
-    {% block javascript-libraries %}{% endblock %}
-    {% block javascript-enhance %}{% endblock %}
+    {% block javascript_variables %}{% endblock %}
+    {% block javascript_libraries %}{% endblock %}
+    {% block javascript_enhance %}{% endblock %}
     <script>
       clearTimeout(CAPE.timeout);
       CAPE.stage('ready');
     </script>
-    {% block javascript-asynchronous %}{% endblock %}
-    {% block javascript-analytics %}{% endblock %}
+    {% block javascript_asynchronous %}{% endblock %}
+    {% block javascript_analytics %}{% endblock %}
   </body>
 </html>

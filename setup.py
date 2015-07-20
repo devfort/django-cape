@@ -5,7 +5,7 @@ except ImportError:
     from distutils.core import setup
 
 PACKAGE = 'django_cape'
-VERSION = '0.1'
+VERSION = '1.0'
 
 package_data = {
         'django_cape': [ 'templates/cape/*.html' ],

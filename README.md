@@ -6,23 +6,23 @@ What you need to know:
 
 0. Add 'django_cape' to your `INSTALLED_APPS`, and extend `cape/shell.html`.
 
-1. Set up Javascript variables in `javascript-variables`.
+1. Set up Javascript variables in `javascript_variables`.
 
-2. Pull in libraries in `javascript-libraries`.
+2. Pull in libraries in `javascript_libraries`.
 
-3. Apply progressive enhancement in `javascript-enhance`.
+3. Apply progressive enhancement in `javascript_enhance`.
 
-4. Asynchronous code, analytics and further behavioural changes (eg form submission) will generally go in `javascript-asynchronous`.
+4. Asynchronous code, analytics and further behavioural changes (eg form submission) will generally go in `javascript_asynchronous`.
 
-5. If your primary language is not British English, override `html-lang`.
+5. If your primary language is not British English, override `html_lang`.
 
-6. If you need to add attributes to the `<html>` element, put them in `html-attributes`.
+6. If you need to add attributes to the `<html>` element, put them in `html_attributes`.
 
-7. Add your normal page content in `body-sheath`.
+7. Add your normal page content in `body_sheath`.
 
-8. If you use analytics, put them in `javascript-analytics`.
+8. If you use analytics, put them in `javascript_analytics`.
 
-9. If you **really** need to put some JavaScript in the `<head>` (eg for measuring page timing) put it in `javascript-head`.
+9. If you **really** need to put some JavaScript in the `<head>` (eg for measuring page timing) put it in `javascript_head`.
 
 When everything runs smoothly, the CSS flow is as follows:
 
@@ -43,18 +43,18 @@ Generally you use `.js-capable` to hide stuff, `.js-timeout` to show it again, a
 Although CAPE is primarily about better progressive enhancement, we also provide a template with recommended slots for the `<head>` of your pages, which
 you use by extending `cape/base.html` instead of `cape/shell.html`. It contains the following blocks:
 
-* `head-title-website`: name of the website
-* `head-title-page`: title of the page
-* `head-title`: override if you need more control over the `<title>` tag
-* `head-html5shim`: included by default, override if you don't want it
-* `head-viewport`: set to `device-width` with a scale of 1 by default, override if you hate mobile users
-* `head-meta`: where to put any other `<meta>` tags
-* `head-icons`: where to declare your favicons and Apple touch icons
-* `head-links`: where to put `<link>` tags, such as `rel=canonical`
-* `head-alternate`: where to put your Atom feeds
-* `head-css-stylesheet`: where to put the `<link>` to your stylesheet
-* `head-css-localstyles`: where to put page-specific CSS links or blocks
-* `head-css`: override if you need more control over styles
+* `head_title_website`: name of the website
+* `head_title_page`: title of the page
+* `head_title`: override if you need more control over the `<title>` tag
+* `head_html5shim`: included by default, override if you don't want it
+* `head_viewport`: set to `device-width` with a scale of 1 by default, override if you hate mobile users
+* `head_meta`: where to put any other `<meta>` tags
+* `head_icons`: where to declare your favicons and Apple touch icons
+* `head_links`: where to put `<link>` tags, such as `rel=canonical`
+* `head_alternate`: where to put your Atom feeds
+* `head_css_stylesheet`: where to put the `<link>` to your stylesheet
+* `head_css_localstyles`: where to put page-specific CSS links or blocks
+* `head_css`: override if you need more control over styles
 
 ## Contact
 

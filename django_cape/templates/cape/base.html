@@ -1,21 +1,21 @@
 {% extends 'cape/shell.html' %}
 
-{% block head-block %}
-  <title>{% block head-title %}{% block head-title-sitename %}SET WEBSITE NAME{% endblock %} — {% block head-title-page %}SET TITLE{% endblock %}{% endblock %}</title>
-  {% block head-html5shim %}
+{% block head_block %}
+  <title>{% block head_title %}{% block head_title_sitename %}SET WEBSITE NAME{% endblock %} — {% block head_title_page %}SET TITLE{% endblock %}{% endblock %}</title>
+  {% block head_html5shim %}
     <!--[if lt IE 9]>
     <script src='https://html5shim.googlecode.com/svn/trunk/html5.js'></script>
     <![endif]-->
   {% endblock %}
-  {% block head-viewport %}
+  {% block head_viewport %}
     <meta name='viewport' content='width=device-width, initial-scale=1'>
   {% endblock %}
-  {% block head-meta %}{% endblock %}
-  {% block head-icons %}{% endblock %}
-  {% block head-links %}{% endblock %}
-  {% block head-alternate %}{% endblock %}
-  {% block head-css %}
-    {% block head-css-stylesheet %}{% endblock %}
-    {% block head-css-localstyles %}{% endblock %}
+  {% block head_meta %}{% endblock %}
+  {% block head_icons %}{% endblock %}
+  {% block head_links %}{% endblock %}
+  {% block head_alternate %}{% endblock %}
+  {% block head_css %}
+    {% block head_css_stylesheet %}{% endblock %}
+    {% block head_css_localstyles %}{% endblock %}
   {% endblock %}
 {% endblock %}
